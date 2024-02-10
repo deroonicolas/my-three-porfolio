@@ -47,10 +47,10 @@ const AboutSection = (props) => {
   const { setSection } = props;
   return (
     <Section mobileTop>
-      <h1 className="text-4xl md:text-5xl font-extrabold leading-snug mt-8 md:mt-0">
+      <h1 className="text-3xl md:text-4xl font-extrabold leading-snug mt-8 md:mt-0">
         Hi, I'm
         <br />
-        <span className="bg-white px-1 italic">Nicolas Deroo</span>
+        <p className="bg-white px-1 mt-1 italic">Nicolas Deroo</p>
       </h1>
       <motion.p
         className="text-lg text-gray-600 mt-4"
@@ -276,6 +276,12 @@ const ContactSection = () => {
               name="email"
               id="email"
               className="block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 p-3"
+            />
+            <ValidationError
+              prefix="Email" 
+              field="email"
+              className="mt-1 text-red-500"
+              errors={state.errors}
             />
             <label
               htmlFor="email"
