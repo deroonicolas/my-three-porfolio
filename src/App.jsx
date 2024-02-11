@@ -3,13 +3,13 @@ import { Canvas } from "@react-three/fiber";
 import { MotionConfig } from "framer-motion";
 import { Leva } from "leva";
 import { Suspense, useEffect, useState } from "react";
-import { Cursor } from "./components/Cursor";
+import { Cursor } from "./components/layouts/Cursor";
 import { Experience } from "./components/Experience";
 import { Interface } from "./components/Interface";
-import { Menu } from "./components/Menu";
-import { ScrollManager } from "./components/ScrollManager";
+import { Menu } from "./components/layouts/Menu";
+import { ScrollManager } from "./components/layouts/ScrollManager";
 import { framerMotionConfig } from "./config";
-import { LoadingScreen } from "./components/LoadingScreen";
+import { LoadingScreen } from "./components/layouts/LoadingScreen";
 
 function App() {
   const [section, setSection] = useState(0);

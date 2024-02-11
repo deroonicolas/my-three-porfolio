@@ -5,6 +5,7 @@ import { animate, useMotionValue } from "framer-motion";
 import { motion } from "framer-motion-3d";
 import { atom, useAtom } from "jotai";
 import { useEffect, useRef } from "react";
+//import { projects } from "../data/projects";
 
 export const projects = [
   {
@@ -38,6 +39,8 @@ export const projects = [
     description: "Showcase site for a freelance friend",
   },
 ];
+
+export const currentProjectAtom = atom(Math.floor(projects.length / 2));
 
 const Project = (props) => {
   const { project, highlighted } = props;
@@ -91,14 +94,13 @@ const Project = (props) => {
   );
 };
 
-export const currentProjectAtom = atom(Math.floor(projects.length / 2));
 
 export const Projects = () => {
   const { viewport } = useThree();
   const [currentProject] = useAtom(currentProjectAtom);
 
   return (
-    <group position-y={-viewport.height * 2 + 1}>
+    <group position-y={-viewport.height * 2 -0.9}>
       {projects.map((project, index) => (
         <motion.group
           key={"project_" + index}

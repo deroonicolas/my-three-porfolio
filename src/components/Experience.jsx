@@ -10,7 +10,7 @@ import { motion } from "framer-motion-3d";
 import { useEffect, useRef, useState } from "react";
 import { framerMotionConfig } from "../config";
 import { Avatar } from "./Avatar";
-import { Background } from "./Background";
+import { Background } from "./layouts/Background";
 import { Office } from "./Office";
 import { Projects } from "./Projects";
 
@@ -103,7 +103,7 @@ export const Experience = (props) => {
             scaleY: 1.5,
             scaleZ: 1.5,
             x: isMobile ? -1.5 : -2,
-            y: -viewport.height * 2.2 + 1.7,
+            y: -viewport.height * 2.2 + 0.1,
             z: 0,
             rotateX: 0,
             rotateY: Math.PI / 2,

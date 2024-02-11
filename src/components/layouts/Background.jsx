@@ -3,6 +3,7 @@ import { useFrame } from "@react-three/fiber";
 import { gsap } from "gsap";
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
+
 export const Background = () => {
   const material = useRef();
   const color = useRef({
