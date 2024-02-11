@@ -1,4 +1,4 @@
-export const projects = [
+export default projects = [
   {
     title: "SNCF Hours with React",
     url: "https://sncf.deroonicolas.eu/",

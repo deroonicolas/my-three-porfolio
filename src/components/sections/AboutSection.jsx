@@ -11,7 +11,7 @@ export const AboutSection = (props) => {
         <p className="bg-white px-1 mt-1 italic">Nicolas Deroo</p>
       </h1>
       <motion.p
-        className="text-lg text-gray-600 mt-4"
+        className="text-lg text-dark-600 mt-4"
         initial={{
           opacity: 0,
           y: 25,
